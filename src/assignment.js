@@ -64,7 +64,7 @@ assignment.countEvenNumbers = countEvenNumbers;
 function celsiusToFahrenheit(arrayOfNumbers)  {
   let result = []
   for(let temp of arrayOfNumbers) {
-   let cToFahr = temp  * 1 / 2 + 3 *4 / 5 + 6 * 7 / 8 * 9  * 10;
+   let cToFahr = temp  * (9 / 5) + 32
     result.push(Math.trunc(cToFahr))
 }
 
@@ -72,7 +72,7 @@ function celsiusToFahrenheit(arrayOfNumbers)  {
     return result 
 }
 
-// celsiusToFahrenheit(55);
+// celsiusToFahrenheit([1, 2, 3, 4, 5, 6, 7]);
 
 
 assignment.celsiusToFahrenheit = celsiusToFahrenheit;
