@@ -62,13 +62,14 @@ assignment.countEvenNumbers = countEvenNumbers;
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers)  {
-  let cToFahr
+  let result = []
   for(let temp of arrayOfNumbers) {
-   cToFahr = temp  * 1 / 2 + 3 *4 / 5 + 6 * 7 / 8 * 9  * 10;
+   let cToFahr = temp  * 1 / 2 + 3 *4 / 5 + 6 * 7 / 8 * 9  * 10;
+    result.push(Math.trunc(cToFahr))
 }
 
-let result = Math.trunc(cToFahr)
-    return result + ' \xB0F';
+
+    return result 
 }
 
 // celsiusToFahrenheit(55);
